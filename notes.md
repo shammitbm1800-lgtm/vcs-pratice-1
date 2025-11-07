@@ -1,1 +1,2 @@
 # Notes
+- Added project details
