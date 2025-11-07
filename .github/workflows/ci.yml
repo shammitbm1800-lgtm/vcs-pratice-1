@@ -1,0 +1,20 @@
+mkdir -p .github/workflows
+cd .github/workflows
+nano ci.yml
+name: CI - Documentation Build
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Build documentation
+        run: echo "Building documentation..."
